@@ -1,11 +1,13 @@
-import logo from '../../assets/logo.svg'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
    return (
       <div>
          <footer className="footer footer-center  p-10">
             <aside>
-               <img src={logo} alt="" />
+            <Link to="/" className="btn btn-ghost text-xl">
+                  <button className="text-xl font-bold">Easy <span className="text-sky-600">Repair</span></button>
+               </Link>
                <p className="font-bold">
                   
                   Providing every king of repairing.
