@@ -30,6 +30,7 @@ const router = createBrowserRouter([
       {
          path: '/checkout/:id',
          element: <CheckOut></CheckOut>,
+         loader: ({params}) => fetch(`${import.meta.env.VITE_API_URL}/services/${params.id}`),
       },
      ]
    },
